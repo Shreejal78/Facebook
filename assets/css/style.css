@@ -1,5 +1,6 @@
 body {
   --main-bg: #EBEBEB;
+  --fb-color:rgb(107, 105, 105);
   background: var(--main-bg);
   font-family: arial;
   margin: 0;
@@ -32,7 +33,7 @@ header {
 
 .top-bar{
   position: sticky;
-  width: 99%;
+  padding: 10px 10px;
   top:0px;
   z-index: 20;
 }
@@ -90,7 +91,7 @@ main {
   grid-template-columns: 1fr 2fr 1fr;
   background: var(--main-bg);
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .profile-icon {
@@ -108,7 +109,7 @@ main {
   width:40px;
 }
 .left-bar {
-  margin-top: 0px;
+  margin-top: 0 ;
   top:80px;
   gap: 16px;
   align-self:start;
@@ -129,9 +130,15 @@ main {
   padding-left: 8px;
   color: #313131;
 }
-
+.contacts > div{
+  padding: 0;
+}
 .right-bar{
   margin-top: 0;
+  padding-right: 10px;
+  position:sticky;
+  top:80px;
+  align-self: start;
 }
 
 
@@ -145,10 +152,6 @@ main {
   border-radius: 50%;
 }
 
-.contacts {
-  position:sticky;
-  top:80px;
-}
 
 .contact-top {
   display: flex;
@@ -157,7 +160,7 @@ main {
   padding: 0;
   font-weight: 600;
   background: var(--main-bg);
-  color: #000000BD;
+  color:var(--fb-color);
 }
 
 .contact-top div {
@@ -178,11 +181,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
   gap:20px;
   min-height: fit-content;
   height: auto;
   overflow-y: scroll;
-  margin-top: 20px;
 }
 
 .main::-webkit-scrollbar{
@@ -474,4 +477,53 @@ main {
 .post-description{
   margin:0 0 5px 0;
   padding:0 10px;
+}
+
+.req-top{
+  background-color: var(--main-bg);
+  padding: 0;
+}
+
+.req-top > p{
+  font-size:16px ;
+  font-weight: 550;
+  color:var(--fb-color);
+}
+.sender-profile{
+  height: 45px;
+  width: 45px;
+}
+.sender-profile img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.sender-info p{
+  margin: 4px;
+}
+
+
+.sender-info p:nth-child(1){
+  font-weight: 550;
+}
+
+.sender-info p:nth-child(2){
+  font-size: 12px;
+}
+.sender{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.option {
+display: flex;
+gap: ;
+}
+.confirm{
+  background-color: #0b66dd;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+
 }
