@@ -33,7 +33,13 @@ header {
   padding: 10px;
   background-color: #fff;
 }
-
+.home{
+  display:flex;
+  padding:0 10px 5px 10px;
+  align-items:center;
+  justify-content:center;
+  border-bottom:3px solid #0A8CFF;
+}
 .logo__search,
 .user,
 .main-nav {
@@ -42,7 +48,7 @@ header {
   gap: 10px;
 }
 
-.user div {
+.user-div {
   background-color: var(--main-bg);
   padding: 6px;
   border-radius: 50%;
@@ -86,10 +92,18 @@ main {
 
 .profile-icon {
   height: 50px;
+  display:flex;
+  padding:0;
+  align-items:center;
+  justify-content:center;
+  background:none;
   width: 50px;
   border-radius: 50%;
 }
-
+.profile-icon img{
+  height:40px;
+  width:40px;
+}
 .left-bar {
   display: flex;
   flex-direction: column;
@@ -299,7 +313,8 @@ main {
   width:100%;
   left:0;
   z-index: 5;
-  background:#00000040;
+  background:linear-gradient(transparent, black);
+  opacity:0.75;
 }
 
 .story p{
@@ -346,8 +361,8 @@ main {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 600px;
-  border-radius: 10px;
+  height:auto;
+  border-radius: 8px;
   width: 100%;
   overflow: hidden;
 }
@@ -357,38 +372,93 @@ main {
   height:60px;
   display: flex;
   width: 100%;
+  justify-content:space-between ;
+  align-items:center;
   background-color: white ;
 }
+.post-admin{
+  display:flex;
+  height:100%;
+  align-items:center;
+  gap:5px;
+  padding:5px 10px;
+}
+.post-admin img{
+  height:45px;
+  width:45px;
+  object-fit:cover;
+  border-radius:50%;
+}
+.reactions{
+  display:flex;
+  padding:0 10px;
+  margin:5px 0 0 0;
+  align-items:center;
+  gap:5px;
+}
+.reactions p{
+  align-self:center;
+  margin:0;
+}
+  .reactions img{
+    height:20px;
+    width:20px;
+  }
+.post-options{
+  display:flex;
+  padding:0 15px 0 0;
+  align-items:center;
+  gap:10px;
+}
+.post-options img{
+  height:35px;
+  width:35px;
+}
+
+.post-admin p{
+  margin:0 0 5px 0;
+}
 .post-img{
-  height: 500px;
+  height: 77%;
   background-color: #36363688;
   width:100%;
 }
 .post-img img{
   height:100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .post-actions{
   display: flex;
-  padding:5px;
+  height:50px;
+  margin-bottom:10px;
   justify-content: space-between;
 }
 
-.like img{
-  height: 35px;
-  width: 35px;
+.actions img{
+  height: 25px;
+  width: 25px;
 
 }
-.like{
+.actions{
   display: flex;
+  padding:10px 25px;
   margin: 5px;
   height:30px;
+  text-align: center;
+  border-radius:30px;
+  background:var(--main-bg);
   gap:5px;
 }
-.like p{
+.actions p{
   font-size:16px;
   font-weight: 550;
+  margin:0;
+  align-self: center;
+}
 
+.post-description{
+  margin:0 0 5px 0;
+  padding:0 5px;
 }
