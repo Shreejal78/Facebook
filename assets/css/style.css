@@ -11,11 +11,21 @@ body {
   border: 2px solid grey;
   background: #EBEBEB;
   width: 200px;
-  padding-left: 6px;
+  padding-left: 35px;
   border-radius: 40px;
+  border: none;
   font-size: 16px;
 }
-
+.search-bar {
+  position: relative;
+}
+.search-bar img{
+  height: 25px;
+  top: 5px;
+  left: 10px;
+  position: absolute;
+  aspect-ratio: 1 / 1;
+}
 .header-icon,
 .logo {
   height: 35px;
@@ -35,6 +45,7 @@ header {
   position: sticky;
   padding: 10px 10px;
   top:0px;
+  box-shadow: 0 3px 5px #0000004b;
   z-index: 20;
 }
 .home{
@@ -126,13 +137,17 @@ main {
   justify-content: start;
   font-size: 16px;
   font-weight: 520;
-  margin-bottom:20px;
-  padding-left: 8px;
+  padding: 12px 8px;
+  border-radius: 15px;
+  cursor: pointer;
+
   color: #313131;
 }
-.contacts > div{
-  padding: 0;
+.left-bar>div:hover,
+.contacts>div:hover{
+  background-color: rgba(167, 166, 166, 0.39);
 }
+
 .right-bar{
   margin-top: 0;
   padding-right: 10px;
@@ -212,11 +227,11 @@ main {
 
 .usr-inp>input {
   height: 20px;
+  border: none;
   width: 80%;
   background: var(--main-bg);
   font-size: 16px;
-  padding: 6px 8px;
-  border: 2px solid grey;
+  padding: 10px 15px;
   border-radius: 50px;
 }
 
@@ -501,29 +516,73 @@ main {
 .sender-info p{
   margin: 4px;
 }
-
-
-.sender-info p:nth-child(1){
-  font-weight: 550;
+.sender{
+  width: 80%;
+}
+.sender-info{
+  margin-bottom: 10px;
+}
+.name-date{
+  display:flex;
+  width: 100%  ;
+  justify-content: space-between;
 }
 
-.sender-info p:nth-child(2){
+.name-date p:nth-child(2){
+  color: var(--fb-color);
+}
+.request{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.sender-info > p{
   font-size: 12px;
 }
-.sender{
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+
+.req-time{
+  align-self: flex-end;
 }
 .option {
 display: flex;
-gap: ;
+gap:10px ;
 }
-.confirm{
-  background-color: #0b66dd;
+.confirm, .delete{
   padding: 10px 20px;
   color: #fff;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 
+}
+.confirm{
+  background-color: #0b66dd;
+
+}
+.delete{
+  background-color: #a2abb3;
+}
+
+.mutual-img-friends{
+  display: flex;
+  gap: 15px;
+}
+.mutual-img{
+  display: flex;
+  position: relative;
+}
+
+.mutual-img div:nth-child(2){
+position:absolute;
+left:15px;
+}
+.mutual-img div:nth-child(1){
+  z-index: 10;
+}
+.mutual-img img{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--main-bg);
 }

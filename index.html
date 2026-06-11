@@ -6,7 +6,7 @@
     <link rel="icon" href="/assets/img/facebook.png">
     <title>Facebook</title>
     <link rel="stylesheet" href="/assets/css/style.css">
-    
+
 </head>
 
 <body>
@@ -16,7 +16,8 @@
                 <img src="/assets/img/facebook.png" alt="" class="logo">
             </div>
 
-            <div>
+            <div class="search-bar">
+                <img src="./assets/img/search.png" alt="">
                 <input type="search" placeholder="Search Facebook" id="search">
             </div>
         </section>
@@ -81,6 +82,14 @@
             <div>
                 <img src="/assets/img/feed.png" alt="">
                 <p>Feeds</p>
+            </div>
+            <div>
+                <img src="/assets/img/play-games.png" alt="">
+                <p>Play games</p>
+            </div>
+            <div>
+                <img src="/assets/img/event.png" alt="">
+                <p>Events</p>
             </div>
         </div>
 
@@ -459,20 +468,30 @@
                     <a href="#">See all</a>
                 </header>
                 <div class="request">
+                    <div class="sender-profile"><img src="./assets/img/profile2.jpeg" alt=""></div>
                     <div class="sender">
-                        <div class="sender-profile"><img src="./assets/img/profile2.jpeg" alt=""></div>
                         <div class="sender-info">
-                            <p>Newbie</p>
-                            <p>17 Mutual Friends</p>
+                            <div class="name-date">
+                                <p>Newbie</p>
+                                <p>2d</p>
+                            </div>
+                            <div class="mutual-img-friends">
+                                <div class="mutual-img">
+                                    <div><img src="./assets/img/profile3.jpg" alt=""></div>
+                                    <div><img src="./assets/img/profile4.jpg" alt=""></div>
+                                </div>
+                                <p>17 Mutual Friends</p>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <button class="confirm">Confirm</button>
+                            <button class="delete">Delete</button>
                         </div>
                     </div>
-                    <div class="option">
-                        <button class="confirm">Confirm</button>
-                        <button class="delete">Delete</button>
-                    </div>
+
                 </div>
             </div>
-
+            <hr> 
             <div class="contacts">
                 <header class="contact-top">
                     <p>Contacts</p>
