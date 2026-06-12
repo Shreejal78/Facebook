@@ -4,6 +4,7 @@ body {
   background: var(--main-bg);
   font-family: arial;
   margin: 0;
+  cursor:url('../img/sword.png'), auto;
 }
 
 #search {
