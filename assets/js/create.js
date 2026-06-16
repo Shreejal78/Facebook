@@ -8,6 +8,9 @@ let dayCount = [0, 31, 28, 31,
     30, 31, 30, 31, 31, 30,
     31, 30, 31
 ]
+
+
+
 for (j = 1930; j <= 2026; j++) {
     yrs.insertAdjacentHTML(
         "beforeend",
@@ -50,3 +53,7 @@ mon.addEventListener("change",
         }
         console.log(a)
     })
+
+function validate(){
+    
+}

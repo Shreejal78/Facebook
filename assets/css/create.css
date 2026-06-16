@@ -112,3 +112,9 @@ padding-left:10px;
     border-radius:20px;
     border:none;
 }
+
+
+form input:focus, select:focus{
+    border:1.5px solid var(--fb-blue);
+    outline-color:var(--fb-blue);
+}
