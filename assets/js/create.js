@@ -2,7 +2,8 @@ let day = document
     .getElementById('day')
 let mon = document
     .getElementById("month")
-let yrs = document.getElementById("year")
+let yrs = document.getElementById(
+    "year")
 let selDay;
 let dayCount = [0, 31, 28, 31,
     30, 31, 30, 31, 31, 30,
@@ -17,12 +18,13 @@ for (j = 1930; j <= 2026; j++) {
         `<option value="${j}">${j}</option>`
     )
 }
-for (i = 1; i <= 28; i++) {
+for (i = 1; i <= 31; i++) {
     day.insertAdjacentHTML(
         "beforeend",
         `<option value="${i}">${i}</option>`
     )
 }
+
 day.addEventListener("change",
     () => {
         selDay = day.value
@@ -51,9 +53,13 @@ mon.addEventListener("change",
                 `<option value="${i}">${i}</option>`
             )
         }
-        console.log(a)
+        
+        if(selDay > dayCount[a]){
+            day[dayCount[a]].selected = "true"
+            selDay = dayCount[a]
+        }
     })
 
-function validate(){
+function validate() {
     
 }
