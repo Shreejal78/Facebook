@@ -46,7 +46,7 @@ form > p{
 }
 
 form > label{
-    font-weight:800;
+    font-weight:600;
 }
 main{
     margin-top: 50px;
@@ -60,7 +60,7 @@ main{
 }
 
 .title {
-    font-weight: 900;
+    font-weight: 700;
     font-size:24px;
     margin-bottom:5px;
     text-align: left;
@@ -76,6 +76,10 @@ main{
     border-radius: 20px;
 }
 
+#login:hover, #submit:hover{
+    cursor: pointer;
+}
+
 .names,.DOB, .gender{
     display:flex;
     gap:15px;
@@ -89,8 +93,9 @@ main{
     border:1.5px solid #1F1F1F6B;
 }
 
-.DOB select, .gender select{
+select{
     height:40px;
+    padding-left: 10px ;
     width:125px;
     border-radius:10px;
     background:white;
@@ -112,6 +117,9 @@ padding-left:10px;
     color:white;
     border-radius:20px;
     border:none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 

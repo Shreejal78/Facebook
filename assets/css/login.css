@@ -78,7 +78,7 @@ main{
     outline-color: var(--fb-blue) ;
 }
 .inp-login:focus ~ .inp-lbl , .translate{
-    transform: translateY(-8jpx);
+    transform: translateY(-8px);
     font-size: 12px;
 }
 .inp-login:focus ~ .inp-lbl {
@@ -94,7 +94,10 @@ main{
     border-radius: 15px;
     padding: 10px 0;
 }
-
+#login:hover{
+    background-color: rgb(16, 118, 208);
+    cursor: pointer;
+}
 #create{
     padding: 10px 90px;
     background-color: white;
@@ -102,4 +105,11 @@ main{
     color: var(--fb-blue);
     font-weight: 550;
     border-radius: 20px;
+}
+#create:hover{
+    cursor: pointer;
+}
+.forgotPass:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
