@@ -61,5 +61,5 @@ mon.addEventListener("change",
     })
 
 function validate() {
-    
+   return true 
 }
